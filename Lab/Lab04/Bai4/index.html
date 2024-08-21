@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .grade-pass {
+            background-color: lightblue !important;
+        }
+
+        .grade-fail {
+            background-color: lightcoral !important;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <form class="container mt-5" style="max-width: 500px;" ng-controller="myCtrl">
+        <label class="form-label mt-3" for="">Họ và tên</label>
+        <input class="form-control" type="text" placeholder="Nguyễn Văn Tèo" ng-model="inputValue.Name">
+
+        <label class="form-label mt-3" for="">Ngày sinh</label>
+        <input class="form-control" type="text">
+
+        <label class="form-label mt-3" for="">Giới tính</label>
+        <select class="form-select" aria-label="Default select example" ng-model="inputValue.Gender">
+            <option selected value="1">Nam</option>
+            <option value="2">Nữ</option>
+            <option value="3">Khác</option>
+        </select>
+
+        <label class="form-label mt-3" for="">Điểm</label>
+        <input class="form-control" type="text" ng-model="inputValue.Score">
+
+        <label class="form-label mt-3" for="">Học lực</label>
+        <input class="form-control alert-info" type="text" ng-model="inputValue.grade" ng-class="{'grade-pass': inputValue.grade == 'Đậu', 'grade-fail': inputValue.grade == 'Rớt'}" >
+
+        <button class="btn btn-outline-primary mt-5" type="submit" ng-click="save()">Grade</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- link thư viện angularJs -->
+    <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+    <!-- link thư viện angularJs Route | bắt buộc phải để bên dưới thư viện angularJS -->
+    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+    <script src="index.js"></script>
+   
+</body>
+
+</html>

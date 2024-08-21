@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Nguyễn Trọng Bằng",
+      "content": "Trường cao đẳng fpr"
+    },
+    {
+      "id": "2",
+      "title": "Tạ Văn Định",
+      "content": "Trường cao đẳng fpr"
+    }
+  ],
+  "users": [
+    {
+      "id": "2",
+      "hoTen": "Nguyễn Văn A",
+      "email": "A@gmail.com",
+      "ngaySinh": "14/05/2003",
+      "sdt": "0399503203"
+    },
+    {
+      "id": "3",
+      "hoTen": "Nguyễn Văn B",
+      "email": "B@gmail.com",
+      "ngaySinh": "14/05/2003",
+      "sdt": "0399503203"
+    },
+    {
+      "hoTen": "Nguyễn Trọng Bằng2",
+      "email": "bang@gmail.com",
+      "ngaySinh": "2024-06-04T17:00:00.000Z",
+      "sdt": "0399503203",
+      "id": "f4f9"
+    },
+    {
+      "hoTen": "Tạ Văn Định",
+      "email": "dinh@gmail.com",
+      "ngaySinh": "1970-01-01T00:00:00.000Z",
+      "sdt": "0399503203",
+      "id": "8ebc"
+    },
+    {
+      "id": "00de",
+      "hoTen": "Nguyễn Trọng Bằng",
+      "email": "bang@gmail.com",
+      "ngaySinh": "2024-06-04T17:00:00.000Z",
+      "sdt": "0399503203"
+    }
+  ]
+}

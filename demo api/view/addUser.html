@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <h1>{{title}}</h1>
+    <div class="card">
+        <div class="card-header">
+            <b>{{addTitle}}</b>
+        </div>
+        <div class="card-body">
+            <form class="form" ng-submit="createUser()">
+                <div>
+                    <label for="" class="form-label mt-2">Họ và tên</label>
+                    <input type="text" class="form-control" ng-model="userInput.hoTen"
+                        placeholder="Nhập họ tên người dùng">
+                    <p class="text-danger" ng-if="kiemTra.hoTen">Vui lòng nhập lại họ tên</p>
+                    <!-- ng-if: nếu điều kiện là tru thì sẽ tồn tại thẻ p -->
+                </div>
+                <div>
+                    <label for="" class="form-label  mt-4">Email</label>
+                    <input type="text" class="form-control" ng-model="userInput.email"
+                        placeholder="Nhập email người dùng">
+                    <p class="text-danger" ng-if="kiemTra.email">Vui lòng nhập lại email</p>
+                </div>
+                <div>
+                    <label for="" class="form-label mt-4">Ngày sinh</label>
+                    <input type="date" class="form-control" ng-model="userInput.ngaySinh">
+                    <p class="text-danger" ng-if="kiemTra.ngaySinh">Vui lòng chọn ngày sinh</p>
+                </div>
+                <div>
+                    <label for="" class="form-label mt-4">Số điện thoại</label>
+                    <input type="text" class="form-control" ng-model="userInput.sdt"
+                        placeholder="Nhập số điện thoại người dùng">
+                    <p class="text-danger" ng-if="kiemTra.sdt">Vui lòng nhập lại số điện thoại</p>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-success mt-3 me-3" type="submit">Thêm người dùng</button>
+                    <button class="btn btn-outline-warning mt-3">Reset</button>
+                </div>
+            </form>
+        </div>
+</body>
+</div>
+
+</html>

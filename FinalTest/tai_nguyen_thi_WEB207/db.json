@@ -1,0 +1,12 @@
+{
+    "post": [
+        {
+            "id": "string - required",
+            "tieu_de": "string required",
+            "noi_dung": "string required",
+            "tac_gia": "string required",
+            "the_loai": "string required (Tin tức | Truyện ngắn | Tiểu thuyết)",
+            "ngay_dang": "14/05/2024"
+        }
+    ]
+}

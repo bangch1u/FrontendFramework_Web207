@@ -1,0 +1,52 @@
+{
+  "nhanvien": [
+    {
+      "id": "1",
+      "ho_ten": "Nguyễn Trọng Bằng",
+      "sdt": "0399503203",
+      "email": "bang09688@gmail.com",
+      "chuc_vu": "Trưởng phòng",
+      "ngay_sinh": "14/05/2003"
+    },
+    {
+      "ho_ten": "Nguyễn Văn Hướngavc",
+      "sdt": "0399503203",
+      "email": "huong@gmail.com",
+      "chuc_vu": "Giám đốc",
+      "ngay_sinh": "2024-06-11T17:00:00.000Z",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "ho_ten": "Nguyễn Tuấn Đạt",
+      "sdt": "0399503203",
+      "email": "dat@gmail.com",
+      "chuc_vu": "Nhân viên",
+      "ngay_sinh": "14/05/2003"
+    },
+    {
+      "id": "837d",
+      "ho_ten": "Nguyễn Văn Nam",
+      "sdt": "2343",
+      "email": "nam@gmail.com",
+      "chuc_vu": "Giám đốc",
+      "ngay_sinh": "2024-06-12T17:00:00.000Z"
+    },
+    {
+      "ho_ten": "Nguyễn",
+      "sdt": "23423",
+      "email": "nguyen@gmail.com",
+      "chuc_vu": "Nhân viên",
+      "ngay_sinh": "2024-06-12T17:00:00.000Z",
+      "id": "f1b7"
+    },
+    {
+      "ho_ten": "nguyễn",
+      "sdt": "3432",
+      "email": "nuyen@gmail.com",
+      "chuc_vu": "Trưởng phòng",
+      "ngay_sinh": "2024-06-13T17:00:00.000Z",
+      "id": "fecc"
+    }
+  ]
+}

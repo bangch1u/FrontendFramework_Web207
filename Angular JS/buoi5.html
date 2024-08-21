@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body ng-app="myApp">
+    <!-- Để khởi tạo một chương trình sử dụng Angular js 
+    Thì chúng ta cần định nghĩa vùng sử dụng
+    ng-app: dùng để định nghĩa 1 vùng sử dụng angular js -->
+    <div ng-controller="bangdzCtrl">
+        <h1>
+            <!-- Hiển thị dữ liệu từ scope -->
+            {{bangnt}}
+        </h1>
+        <h1 ng-bind="bang145"></h1>
+    </div>
+    <div ng-controller="nguoiYeuCu">
+        <h5>NYC</h5>
+        <p>
+            Họ tên: {{hoTen}} <br>
+            Giới tính: {{gioiTinh}} <br>
+            Địa chỉ: {{diaChi}} <br>
+            Số điện thoại: {{sdt}} <br>
+            Ngày sinh: {{ngaySinh}}
+        </p>
+    </div>
+    <div ng-controller="myctrl">
+        <h2>{{info.fpoly}}</h2>
+        <h4>{{info.course}}</h4>
+    </div>
+    <!-- Mỗi 1 vùng Controller sẽ được sử dụng vào 1 mục đích xác định -->
+
+    <!-- Nhúng thư viện Angular js
+Cách 1: Download -->
+    <!-- <script src="libs/angular.min.js"></script> -->
+    <!-- Cách 2: Sử dụng link online -->
+    <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+    <script>
+        // Khởi tạo module
+        // Định nghĩa vùng sử dụng angular js cho vùng myApp
+        let bangChiu = angular.module('myApp', []); // 2 tham số: tên của vùng ng-app, các thành phần phụ thuộc
+
+        //Định nghĩa 1 vùng Controller
+        // angular.module('myApp',[]).controller();
+        bangChiu.controller("bangdzCtrl", myFunction); //2 tham số: tên của Controller cần định nghĩa, hàm thực hiện công việc 
+        function myFunction($scope) {
+            //$scope là một tham số mặc định của angular js không thể thay đổi
+            //dùng deer render dữ liệu ra HTML
+            // console.log("Bằng đẹp zai!")
+            $scope.bangnt = "Bằng"
+            $scope.bang145 = "Qua môn"
+           
+
+        }
+       
+        bangChiu.controller("nguoiYeuCu", myNyc);
+        function myNyc($scope){
+            console.log("test")
+            $scope.hoTen = "Nguyễn...."
+            $scope.gioiTinh = "Nữ"
+            $scope.diaChi = "Bắc Ninh"
+            $scope.sdt = "0123456789"
+            $scope.ngaySinh = "04/10/2003"
+        }
+        bangChiu.controller("myctrl", function($scope){
+            $scope.info = {
+                fpoly: "FPT Polytechnic",
+                course: "Welcome to AngularJS"
+            }
+        })
+
+    </script>
+</body>
+
+</html>
